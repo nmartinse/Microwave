@@ -1,7 +1,7 @@
 package microondas;
 
 public class Lamp {
-	private boolean lampOn; //privado porque el resto de metodos sirven como get y set
+	private boolean lampOn;
 	
 	public void lamp_on() {
 		lampOn = true;

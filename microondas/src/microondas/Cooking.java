@@ -45,7 +45,6 @@ public class Cooking extends Estado {
 		if (m.power == 0) {
 			m.setEstado(new ClosedWithItem(m));
 		}
-			
 
 		else if (m.power > 0) {
 			m.power -= 5;
@@ -68,6 +67,7 @@ public class Cooking extends Estado {
 			m.timer--;
 		}
 		m.beep.beep(3);
+		m.display.setDisplay("The food is ready");
 		m.setEstado(new ClosedWithItem(m));
 	}
  }
